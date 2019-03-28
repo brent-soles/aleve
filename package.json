@@ -1,6 +1,6 @@
 {
   "name": "aleve",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Zero-config, fs-based cli server for serving static content, primarily for development",
   "main": "index.js",
   "repository": "https://github.com/brent-soles/aleve.git",
@@ -9,6 +9,9 @@
   "private": false,
   "scripts": {
     "aleve": "node index.js"
+  },
+  "bin": {
+    "aleve": "./index.js"
   },
   "dependencies": {
     "socket.io": "^2.2.0"
