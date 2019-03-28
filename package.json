@@ -1,6 +1,6 @@
 {
   "name": "aleve",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Zero-config, fs-based cli server for serving static content, primarily for development",
   "main": "index.js",
   "repository": "https://github.com/brent-soles/aleve.git",
