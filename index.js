@@ -1,10 +1,4 @@
-/**
- * main() -> main entry point for parsing arguements
- * args:
- *  argv -> [] of args in String format
- * 
- *  Max number of args: 3
- */
+#!/usr/bin/env node --harmony
 function main(argv) {
   if(argv.length < 3) {
     console.log(`
@@ -19,7 +13,6 @@ function main(argv) {
 
   // Includes (don't need to run if there is an error)
   const fs = require('fs');
-  const http = require('http');
   const aleve = require('./aleve-core');
 
   // arvv[0] is 'node'
