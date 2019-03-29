@@ -1,19 +1,31 @@
 {
   "name": "aleve",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Zero-config, fs-based cli server for serving static content, primarily for development",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/brent-soles/aleve.git",
   "author": "brent-soles <brentsoles@protonmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "aleve": "node index.js"
+    "start": "node ./lib/index.js",
+    "dev": "nodemon ./lib/index.js",
+    "build": "pkg ."
   },
   "bin": {
-    "aleve": "./index.js"
+    "aleve": "./lib/index.js"
+  },
+  "pkg": {
+    "scripts": ".lib/*",
+    "outPath": "bin/",
+    "targets": [
+      "node10-macos",
+      "node10-linux",
+      "node10-win"
+    ]
   },
   "dependencies": {
     "socket.io": "^2.2.0"
-  }
+  },
+  "devDependencies": {}
 }
