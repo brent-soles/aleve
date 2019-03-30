@@ -1,6 +1,6 @@
 # aleve
 
-## so as to aleveiate your development burden with static assets and/or makd development painless :D
+## so as to aleveiate your development burden with static assets and/or make development painless :D
 
 # To download
 
